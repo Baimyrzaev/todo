@@ -1,0 +1,6 @@
+.root {
+  @apply flex items-center justify-between px-2 border-b;
+  h2 {
+    @apply text-2xl;
+  }
+}

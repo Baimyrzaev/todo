@@ -1,0 +1,48 @@
+.root {
+  @apply flex border rounded flex-col p-3;
+  h2 {
+    @apply text-2xl;
+  }
+  p {
+    @apply my-2 h-[200px] break-words leading-8 overflow-auto;
+  }
+  .editBlock {
+    @apply flex items-center justify-between;
+  }
+  .buttonsContainer {
+    @apply flex items-center justify-between my-2;
+  }
+}
+
+.modalFormContainer {
+  @apply w-1/3 flex flex-col bg-white border rounded;
+  h2 {
+    @apply p-2 text-center text-2xl border-b;
+  }
+  div {
+    @apply p-2 flex flex-col;
+  }
+}
+
+
+@media (max-width: 470px) {
+  .root {
+    .editBlock {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .root {
+    .buttonsContainer {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

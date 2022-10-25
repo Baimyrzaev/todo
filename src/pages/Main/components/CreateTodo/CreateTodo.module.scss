@@ -1,0 +1,12 @@
+.root {
+  @apply w-full flex items-center justify-center my-10;
+  form {
+    @apply w-[650px] mx-4 border rounded shadow-md;
+    h2 {
+      @apply text-xl text-center py-2 border-b;
+    }
+    div {
+      @apply m-2 flex flex-col;
+    }
+  }
+}
