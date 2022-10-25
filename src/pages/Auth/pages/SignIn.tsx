@@ -51,7 +51,7 @@ const SignIn: FC = () => {
         <Button
           loading={isLoading}
           onClick={onSubmit}
-        >register</Button>
+        >auth</Button>
         <p className="text-gray-500 text-center my-2">or</p>
         <Link
           className="text-black font-[500] text-center"
